@@ -1,0 +1,96 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.25.3.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sanketm SanketM, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.20
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARM.DLL V5.20
+Dialog DLL:      DARMP.DLL V1.52.0.0
+Target DLL:      UL2ARM.DLL V1.74.8.0
+Dialog DLL:      TARMP.DLL V1.52.0.0
+ 
+<h2>Project:</h2>
+G:\My Drive\Envision\ARM_Microcontoller\Interrupt\ADC_interrupt\ADC_interrupt.uvproj
+Project File Date:  02/17/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+compiling ADC.c...
+ADC.h(3): warning:  #1295-D: Deprecated declaration ADC_init - give arg types
+  void ADC_init();
+ADC.h(4): warning:  #1-D: last line of file ends without a newline
+  unsigned int ADC_read(); 
+ADC.h(4): warning:  #1295-D: Deprecated declaration ADC_read - give arg types
+  unsigned int ADC_read(); 
+ADC.c(15): warning:  #61-D: integer operation result is out of range
+        while(!(
+D0DR2&(1<<31)));	    
+ADC.c(15): warning:  #68-D: integer conversion resulted in a change of sign
+        while(!(
+D0DR2&(1<<31)));	    
+ADC.c(18): warning:  #1-D: last line of file ends without a newline
+  }
+ADC.c: 6 warnings, 0 errors
+assembling Startup.s...
+compiling PLL.c...
+PLL.h(3): warning:  #1-D: last line of file ends without a newline
+  void PLL_SET();
+PLL.h(3): warning:  #1295-D: Deprecated declaration PLL_SET - give arg types
+  void PLL_SET();
+PLL.c(14): warning:  #1-D: last line of file ends without a newline
+  }
+PLL.c: 3 warnings, 0 errors
+compiling Lcd_4bit.c...
+Lcd_4bit.h(7): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+Lcd_4bit.h(11): warning:  #1-D: last line of file ends without a newline
+  void display(unsigned int adcval);
+Lcd_4bit.c(7): warning:  #223-D: function "Delay" declared implicitly
+     Delay(10);
+Lcd_4bit.c(20): warning:  #223-D: function "Delay" declared implicitly
+  	Delay(10);
+Lcd_4bit.c(36): warning:  #223-D: function "Delay" declared implicitly
+  	Delay(10);
+Lcd_4bit.c(57): warning:  #1-D: last line of file ends without a newline
+  }
+Lcd_4bit.c: 6 warnings, 0 errors
+compiling ADC_interrupt.c...
+PLL.h(3): warning:  #1-D: last line of file ends without a newline
+  void PLL_SET();
+PLL.h(3): warning:  #1295-D: Deprecated declaration PLL_SET - give arg types
+  void PLL_SET();
+Lcd_4bit.h(7): warning:  #1295-D: Deprecated declaration LCD_Init - give arg types
+  void LCD_Init();
+Lcd_4bit.h(11): warning:  #1-D: last line of file ends without a newline
+  void display(unsigned int adcval);
+ADC.h(3): warning:  #1295-D: Deprecated declaration ADC_init - give arg types
+  void ADC_init();
+ADC.h(4): warning:  #1-D: last line of file ends without a newline
+  unsigned int ADC_read(); 
+ADC.h(4): warning:  #1295-D: Deprecated declaration ADC_read - give arg types
+  unsigned int ADC_read(); 
+ADC_interrupt.c(10): warning:  #951-D: return type of function "main" must be "int"
+  void main (void)
+ADC_interrupt.c(50): warning:  #1-D: last line of file ends without a newline
+  }
+ADC_interrupt.c: 9 warnings, 0 errors
+linking...
+Program Size: Code=2156 RO-data=32 RW-data=4 ZI-data=1260  
+FromELF: creating hex file...
+".\Objects\ADC_interrupt.axf" - 0 Error(s), 24 Warning(s).
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
